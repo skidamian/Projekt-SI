@@ -19,6 +19,7 @@ namespace Shell
     {
         protected override DependencyObject CreateShell()
         {
+            //siema siema
             this.Container.RegisterType<DependencyObject, ShellView>("ShellView");
             return this.Container.Resolve<ShellView>();
         }
