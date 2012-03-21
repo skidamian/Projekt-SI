@@ -1,0 +1,56 @@
+﻿<prism:ModuleCatalog xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    xmlns:prism="clr-namespace:Microsoft.Practices.Prism.Modularity;assembly=Microsoft.Practices.Prism">
+
+    <prism:ModuleInfo Ref="DBManagement.xap"
+                      ModuleName="DBManagement"
+                      ModuleType="DBManagement.DBManagementInit, 
+                      DBManagement, Version=1.0.0.0"
+                      InitializationMode="WhenAvailable"/>
+    <prism:ModuleInfo Ref="EmployeeManagement.xap"
+                      ModuleName="EmployeeManagement"
+                      ModuleType="EmployeeManagement.EmployeeManagementInit, 
+                      EmployeeManagement, Version=1.0.0.0"
+                      InitializationMode="WhenAvailable"/>
+    <prism:ModuleInfo Ref="CustomerManagement.xap"
+                      ModuleName="CustomerManagement"
+                      ModuleType="CustomerManagement.CustomerManagementInit, 
+                      CustomerManagement, Version=1.0.0.0"
+                      InitializationMode="WhenAvailable"/>
+    <prism:ModuleInfo Ref="CarsManagement.xap"
+                      ModuleName="CarsManagement"
+                      ModuleType="CarsManagement.CarsManagementInit, 
+                      CarsManagement, Version=1.0.0.0"
+                      InitializationMode="WhenAvailable"/>
+    <prism:ModuleInfo Ref="Search.xap"
+                      ModuleName="Search"
+                      ModuleType="Search.SearchInit, 
+                      Search, Version=1.0.0.0"
+                      InitializationMode="WhenAvailable"/>
+    <prism:ModuleInfo Ref="Renting.xap"
+                      ModuleName="Renting"
+                      ModuleType="Renting.RentingInit, 
+                      Renting, Version=1.0.0.0"
+                      InitializationMode="WhenAvailable"/>
+    <prism:ModuleInfo Ref="StatusCheck.xap"
+                      ModuleName="StatusCheck"
+                      ModuleType="StatusCheck.StatusCheckInit, 
+                      StatusCheck, Version=1.0.0.0"
+                      InitializationMode="WhenAvailable"/>
+    <prism:ModuleInfo Ref="ReporGenerate.xap"
+                      ModuleName="ReporGenerate"
+                      ModuleType="ReporGenerate.ReporGenerateInit, 
+                      ReporGenerate, Version=1.0.0.0"
+                      InitializationMode="WhenAvailable"/> 
+    <prism:ModuleInfo Ref="PaymentManagement.xap"
+                      ModuleName="PaymentManagement"
+                      ModuleType="PaymentManagement.PaymentManagementInit, 
+                      PaymentManagement, Version=1.0.0.0"
+                      InitializationMode="WhenAvailable"/>
+    <prism:ModuleInfo Ref="BookingManagement.xap"
+                      ModuleName="BookingManagement"
+                      ModuleType="BookingManagement.BookingManagementInit, 
+                      BookingManagement, Version=1.0.0.0"
+                      InitializationMode="WhenAvailable"/>
+</prism:ModuleCatalog>

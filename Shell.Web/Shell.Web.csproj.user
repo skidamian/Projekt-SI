@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <StartPageUrl>ShellTestPage.aspx</StartPageUrl>
+          <StartAction>SpecificPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>True</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>True</AlwaysStartWebServerOnDebug>
+          <ProjectOutputReferences>
+            <Ref Project="{1EE4D2F4-AE49-4CFC-87D2-BEA04FE0788F}" Folder="ClientBin">Shell.xap</Ref>
+            <Ref Project="{47009C4F-D8C8-4A35-A2D8-9F4548E70687}" Folder="ClientBin">DBManagement.xap</Ref>
+            <Ref Project="{B188340A-597F-4C64-959A-51C7F9BB88B7}" Folder="ClientBin">EmployeeManagement.xap</Ref>
+            <Ref Project="{D8D56DE5-3353-4812-980E-C2A91214609F}" Folder="ClientBin">CustomerManagement.xap</Ref>
+            <Ref Project="{A36D934A-5DEB-486D-A31B-831D6D9EEFA5}" Folder="ClientBin">CarsManagement.xap</Ref>
+            <Ref Project="{3F53A7E4-7205-4D53-B031-4EA84A2902A2}" Folder="ClientBin">Search.xap</Ref>
+            <Ref Project="{8CC6E3A7-FE01-4D9D-9FE6-B2EADFE7F000}" Folder="ClientBin">Renting.xap</Ref>
+            <Ref Project="{DDCC0007-3221-442E-AE4E-EDDD82A38F4F}" Folder="ClientBin">StatusCheck.xap</Ref>
+            <Ref Project="{F38BD045-9A17-4F68-98E7-67D3C1020047}" Folder="ClientBin">ReporGenerate.xap</Ref>
+            <Ref Project="{BD126272-8401-44F2-AEED-889EECCA01CF}" Folder="ClientBin">PaymentManagement.xap</Ref>
+            <Ref Project="{BC3ACC01-AD2E-42CF-841E-FFDBBB784822}" Folder="ClientBin">BookingManagement.xap</Ref>
+          </ProjectOutputReferences>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

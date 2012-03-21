@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="baza1" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=KOMPUTER-KAZIA\SQLEXPRESS;Initial Catalog=baza1;Integrated Security=True" SettingsObjectName="CarsManagement.Ria.Web.Properties.Settings" SettingsPropertyName="baza1ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.produkty" Member="produkties">
+    <Type Name="produkty">
+      <Column Name="ID_produktu" Type="System.String" DbType="VarChar(7) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nazwa" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="producent" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="info" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="cena" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

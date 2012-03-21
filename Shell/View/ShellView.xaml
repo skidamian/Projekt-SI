@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="Shell.View.ShellView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:prism="clr-namespace:Microsoft.Practices.Prism.Regions;assembly=Microsoft.Practices.Prism"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+    
+    <Grid x:Name="LayoutRoot" Background="White">
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+                
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            
+            <sdk:Frame BorderBrush="Black"
+                       Grid.Row="0"
+                       Grid.Column="2"
+                       MinHeight="10"
+                       Width="auto"
+                       HorizontalAlignment="Right">  
+                <ItemsControl x:Name="LoginItemControl"           
+                              prism:RegionManager.RegionName="LoginRegion"/>
+            </sdk:Frame>
+            
+            <sdk:Frame Grid.Row="1"
+                       Grid.Column="0"
+                       MinHeight="100"
+                       MinWidth="100" BorderBrush="Blue">
+                    <ItemsControl x:Name="NavigationItemControl" 
+                          prism:RegionManager.RegionName="NavigationRegion"/>
+            </sdk:Frame>
+            
+            <sdk:Frame Grid.Row="1"
+                       Grid.Column="1"
+                       MinHeight="100"
+                       MinWidth="100" 
+                       BorderBrush="Yellow">
+                <ItemsControl x:Name="MainRegionItemControl"               
+                          prism:RegionManager.RegionName="MainRegion"/>
+            </sdk:Frame>
+            
+            <sdk:Frame
+                Grid.Row="2"
+                Grid.Column="1"
+                MinHeight="100"
+                MinWidth="100" 
+                BorderBrush="OrangeRed">
+                <ItemsControl x:Name="AdditionalItemControl"              
+                          prism:RegionManager.RegionName="AdditionalRegion"/>
+            </sdk:Frame>
+        </Grid>
+    </Grid>
+</UserControl>

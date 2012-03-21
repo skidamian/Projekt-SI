@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BB1576E3-BE7D-4863-893B-56645BD5B6A9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Shell.Web</RootNamespace>
+    <AssemblyName>Shell.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightApplicationList>{1EE4D2F4-AE49-4CFC-87D2-BEA04FE0788F}|..\Shell\Shell.csproj|ClientBin|False,{47009C4F-D8C8-4A35-A2D8-9F4548E70687}|..\DBManagement\DBManagement.csproj|ClientBin|False,{B188340A-597F-4C64-959A-51C7F9BB88B7}|..\EmployeeManagement\EmployeeManagement.csproj|ClientBin|False,{D8D56DE5-3353-4812-980E-C2A91214609F}|..\CustomerManagement\CustomerManagement.csproj|ClientBin|False,{A36D934A-5DEB-486D-A31B-831D6D9EEFA5}|..\CarsManagement\CarsManagement.csproj|ClientBin|False,{3F53A7E4-7205-4D53-B031-4EA84A2902A2}|..\Search\Search.csproj|ClientBin|False,{8CC6E3A7-FE01-4D9D-9FE6-B2EADFE7F000}|..\Renting\Renting.csproj|ClientBin|False,{DDCC0007-3221-442E-AE4E-EDDD82A38F4F}|..\StatusCheck\StatusCheck.csproj|ClientBin|False,{F38BD045-9A17-4F68-98E7-67D3C1020047}|..\ReporGenerate\ReporGenerate.csproj|ClientBin|False,{BD126272-8401-44F2-AEED-889EECCA01CF}|..\PaymentManagement\PaymentManagement.csproj|ClientBin|False,{BC3ACC01-AD2E-42CF-841E-FFDBBB784822}|..\BookingManagement\BookingManagement.csproj|ClientBin|False</SilverlightApplicationList>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.DomainServices.Hosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel.DomainServices.Server, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BookingManagementTestPage.aspx" />
+    <Content Include="BookingManagementTestPage.html" />
+    <Content Include="CarsManagementTestPage.aspx" />
+    <Content Include="CarsManagementTestPage.html" />
+    <Content Include="ClientBin\BookingManagement.xap" />
+    <Content Include="ClientBin\CarsManagement.xap" />
+    <Content Include="ClientBin\CustomerManagement.xap" />
+    <Content Include="ClientBin\DBManagement.xap" />
+    <Content Include="ClientBin\EmployeeManagement.xap" />
+    <Content Include="ClientBin\PaymentManagement.xap" />
+    <Content Include="ClientBin\Renting.xap" />
+    <Content Include="ClientBin\ReporGenerate.xap" />
+    <Content Include="ClientBin\Search.xap" />
+    <Content Include="ClientBin\Shell.xap" />
+    <Content Include="ClientBin\StatusCheck.xap" />
+    <Content Include="CustomerManagementTestPage.aspx" />
+    <Content Include="CustomerManagementTestPage.html" />
+    <Content Include="DBManagementTestPage.aspx" />
+    <Content Include="DBManagementTestPage.html" />
+    <Content Include="EmployeeManagementTestPage.aspx" />
+    <Content Include="EmployeeManagementTestPage.html" />
+    <Content Include="PaymentManagementTestPage.aspx" />
+    <Content Include="PaymentManagementTestPage.html" />
+    <Content Include="RentingTestPage.aspx" />
+    <Content Include="RentingTestPage.html" />
+    <Content Include="ReporGenerateTestPage.aspx" />
+    <Content Include="ReporGenerateTestPage.html" />
+    <Content Include="SearchTestPage.aspx" />
+    <Content Include="SearchTestPage.html" />
+    <Content Include="ShellTestPage.aspx" />
+    <Content Include="ShellTestPage.html" />
+    <Content Include="Silverlight.js" />
+    <Content Include="StatusCheckTestPage.aspx" />
+    <Content Include="StatusCheckTestPage.html" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DomainService1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BookingManagement.Ria.Web\BookingManagement.Ria.Web.csproj">
+      <Project>{08A655D4-1C54-424D-A4E3-C8EF090DE9B0}</Project>
+      <Name>BookingManagement.Ria.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CarsManagement.Ria.Web\CarsManagement.Ria.Web.csproj">
+      <Project>{C6CB25BF-B4C4-4A8F-9EEA-6B5127BE16AB}</Project>
+      <Name>CarsManagement.Ria.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomerManagement.Ria.Web\CustomerManagement.Ria.Web.csproj">
+      <Project>{06945E11-16C0-458B-A5D3-9509C49F298E}</Project>
+      <Name>CustomerManagement.Ria.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBManagement.Ria.Web\DBManagement.Ria.Web.csproj">
+      <Project>{ABC7D993-F8CB-4709-AAF9-57274A8F1A3D}</Project>
+      <Name>DBManagement.Ria.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmployeeManagement.Ria.Web\EmployeeManagement.Ria.Web.csproj">
+      <Project>{6F97077B-44D4-4B87-A134-B77CB23F76C8}</Project>
+      <Name>EmployeeManagement.Ria.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PaymentManagement.Ria.Web\PaymentManagement.Ria.Web.csproj">
+      <Project>{A5EBEC4F-23A6-4D6E-BAF5-0BDAB9C5A47F}</Project>
+      <Name>PaymentManagement.Ria.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renting.Ria.Web\Renting.Ria.Web.csproj">
+      <Project>{11E1C57C-1E82-4DED-9F71-BFE872E4B9F4}</Project>
+      <Name>Renting.Ria.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReporGenerate.Ria.Web\ReporGenerate.Ria.Web.csproj">
+      <Project>{CA6521BC-EA5A-416F-89C5-0368B145F173}</Project>
+      <Name>ReporGenerate.Ria.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Search.Ria.Web\Search.Ria.Web.csproj">
+      <Project>{B80EC1A3-9DA3-4615-81C0-98AE10288F59}</Project>
+      <Name>Search.Ria.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StatusCheck.Ria.Web\StatusCheck.Ria.Web.csproj">
+      <Project>{D91C8261-4686-44A4-90B0-22E6EBD8986E}</Project>
+      <Name>StatusCheck.Ria.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51394</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
