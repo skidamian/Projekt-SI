@@ -8,7 +8,7 @@
     
     <Grid x:Name="LayoutRoot" Background="White">
         <TextBlock Text="Samochody - oferta" FontSize="32"/>
-        <sdk:DataGrid AutoGenerateColumns="False" Height="194" HorizontalAlignment="Left" Margin="12,60,0,0" Name="dataGrid1" VerticalAlignment="Top" Width="376" />
+        <sdk:DataGrid AutoGenerateColumns="True" Height="194" HorizontalAlignment="Left" Margin="12,60,0,0" Name="dataGrid1" VerticalAlignment="Top" Width="376" ItemsSource="{Binding ListOfAllCars}" />
         <Button Content="Odśwież" Height="21" HorizontalAlignment="Left" Margin="12,265,0,0" Name="button1" VerticalAlignment="Top" Width="174" Click="button1_Click" />
         <Button Content="Zapisz zmiany" Height="23" HorizontalAlignment="Right" Margin="0,265,12,0" Name="button2" VerticalAlignment="Top" Width="174" Click="button2_Click" />
     </Grid>

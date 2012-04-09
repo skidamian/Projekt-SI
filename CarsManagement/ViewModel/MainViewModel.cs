@@ -9,11 +9,43 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Infrastructure;
+using System.Linq;
+
+using CarsManagement.Ria;
+using CarsManagement.Ria.Web;
+using System.ServiceModel.DomainServices.Client;
+using System.Collections.Generic;
 
 namespace CarsManagement.ViewModel
 {
     public class MainViewModel : ViewModelBase
     {
+        private CarsManagementDomainService service = new CarsManagementDomainService();
 
+        private List<samochody> listOfAllCars;
+
+        public MainViewModel()
+        {
+            getListOfAllCars();
+        }
+
+        public List<samochody> ListOfAllCars
+        {
+            get { return listOfAllCars; }
+            set
+            {
+                listOfAllCars = value;
+                this.NotifyPropertyChanged("listOfAllCars");
+            }
+        }
+
+        private void getListOfAllCars()
+        {
+            service.Load(service.GetSamochodiesQuery(), callback =>
+                {
+                    ListOfAllCars = new List<samochody>(callback.Entities);
+                }
+            , null);
+        }
     }
 }
