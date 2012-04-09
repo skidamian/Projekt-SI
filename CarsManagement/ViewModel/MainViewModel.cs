@@ -20,13 +20,12 @@ namespace CarsManagement.ViewModel
 {
     public class MainViewModel : ViewModelBase
     {
-        private CarsManagementDomainService service = new CarsManagementDomainService();
+        CarsManagementDomainContext service = new CarsManagementDomainContext();
 
         private List<samochody> listOfAllCars;
 
         public MainViewModel()
         {
-            getListOfAllCars();
         }
 
         public List<samochody> ListOfAllCars
@@ -35,11 +34,11 @@ namespace CarsManagement.ViewModel
             set
             {
                 listOfAllCars = value;
-                this.NotifyPropertyChanged("listOfAllCars");
+                this.NotifyPropertyChanged("ListOfAllCars");
             }
         }
 
-        private void getListOfAllCars()
+        public void getListOfAllCars()
         {
             service.Load(service.GetSamochodiesQuery(), callback =>
                 {

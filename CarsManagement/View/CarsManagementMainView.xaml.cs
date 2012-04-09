@@ -23,7 +23,8 @@ namespace CarsManagement.View
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-
+            MainViewModel model = (MainViewModel)this.DataContext;
+            model.getListOfAllCars();
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
