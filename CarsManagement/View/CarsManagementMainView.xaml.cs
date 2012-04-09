@@ -20,5 +20,15 @@ namespace CarsManagement.View
             InitializeComponent();
             this.DataContext = viewModel;
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
