@@ -46,5 +46,10 @@ namespace CarsManagement.ViewModel
                 }
             , null);
         }
+
+        public void saveChanges()
+        {
+            service.SubmitChanges();
+        }
     }
 }

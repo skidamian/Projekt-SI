@@ -21,15 +21,19 @@ namespace CarsManagement.View
             this.DataContext = viewModel;
         }
 
+        private MainViewModel model()
+        {
+            return (MainViewModel)this.DataContext;
+        }
+
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            MainViewModel model = (MainViewModel)this.DataContext;
-            model.getListOfAllCars();
+            model().getListOfAllCars();
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-
+            model().saveChanges();
         }
     }
 }
