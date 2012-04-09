@@ -13,8 +13,6 @@ using Microsoft.Practices.Prism.Regions;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Prism.Commands;
 using System.Linq;
-using CarsManagement.Ria;
-using CarsManagement.Ria.Web;
 using System.ServiceModel.DomainServices.Client;
 using System.Linq;
 
