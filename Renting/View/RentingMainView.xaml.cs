@@ -18,6 +18,7 @@ namespace Renting.View
         {
             InitializeComponent();
             this.DataContext = viewModel;
+
         }
     }
 }
